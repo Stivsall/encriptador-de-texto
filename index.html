@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Encriptador de texto</title>
 </head>
 <body>
     <main class="main">
         <section>
+
             <textarea id="texto-resive" class="campo-texto-resive" pbotlaceholder="llega-texto">
             </textarea>
+            
             <div class="btn">
                 <button class="boton-encripta" onclick="btnEncriptado()" >Encriptar</button>
-                <button class="boton-traduce">Decifrar</button>
+                <button class="boton-traduce" onclick="btnDesncriptado()" >Decifrar</button>
             </div>
         </section>
         <section class="texto-encriptado" >
-            <textarea id="envia-texto-encriptado" class="campo-texto-encriptado"></textarea>
+            <textarea id="mensaje-texto-encriptado" class="campo-texto-encriptado"></textarea>
         </section>
     </main>
     <script src="encripta.js"></script> 
