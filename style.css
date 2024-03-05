@@ -1,0 +1,93 @@
+body{
+    font-family: "lato", sans-serif;
+    background: #3a485f;
+}
+
+header{
+   
+    align-items: center;
+    background: #0055FF;
+    
+}
+.banner{
+    width: 100%;
+    
+}
+.principal{
+    width: 940px;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+.candado{
+    width: 20%;
+
+}
+h1{
+    color: black;
+    font-size: 50px;
+    display: inline;
+    
+}
+.primera-caja{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px 15px;
+    
+}
+.campo-texto-resive{
+    border: none;
+    padding: 20px 15px;
+    background: #151f33;
+    color: aquamarine;
+}
+.btn{
+   
+    padding: 20px;
+}
+.boton-encripta{
+    width: 20%;
+    padding: 0 30px;
+    font-size: 1.5em;
+    color: #6fff6f;
+    background-color: #0055FF;
+    border: none;
+    border-radius: 3px;
+
+}
+
+.boton-encripta:hover{
+    background: #17aa4f;
+    transform: scale(1.2);
+}
+
+.boton-traduce{
+    width: 20%;
+    padding: 0 30px;
+    font-size: 1.5em;
+    color: #50f5df;
+    background-color: #0055FF;
+    border: none;
+    border-radius: 3px;
+}
+.boton-traduce:hover{
+    background: #17aa4f;
+    transform: scale(1.2);
+}
+.campo-texto-encriptado{
+    margin: 0 0 0 900px;
+    border: none;
+    padding: 20px 15px;
+    background: #151f33;
+    color: aquamarine;
+}
+
+footer{
+    text-align: center;
+    background: url(Imagenes\ Cripto/textura.png);
+    padding: 40px;
+}
+.copy{
+    color: black;
+    font-size: 18px;
+    padding: 20px;
+}

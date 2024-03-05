@@ -6,23 +6,39 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Encriptador de texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <div class="principal">
+            <img src="Imagenes Cripto/Candado.png" alt="Candado y números" class="candado">
+            <h1>Encriptador One Alura</h1>
+        </div>
+        <img src="Imagenes Cripto/banner.png" alt="banner de rompecabezas" class="banner">
+    </header>
     <main class="main">
-        <section>
-
-            <textarea id="texto-resive" class="campo-texto-resive" pbotlaceholder="llega-texto">
-            </textarea>
+        <section class="primera-caja">
             
+            <textarea id="texto-resive" class="campo-texto-resive" cols="60" rows="10" pbotlaceholder="llega-texto">
+            </textarea>
+
             <div class="btn">
                 <button class="boton-encripta" onclick="btnEncriptado()" >Encriptar</button>
                 <button class="boton-traduce" onclick="btnDesncriptado()" >Decifrar</button>
             </div>
         </section>
         <section class="texto-encriptado" >
-            <textarea id="mensaje-texto-encriptado" class="campo-texto-encriptado"></textarea>
+            <textarea id="mensaje-texto-encriptado" class="campo-texto-encriptado" cols="40" rows="10"></textarea>
         </section>
     </main>
+    <footer>
+        <div class="pie">
+           
+            <p class="copy">&copy Copyrigth Barberia Alura</p>
+        </div>
+    </footer>
     <script src="encripta.js"></script> 
 </body>
 </html>
