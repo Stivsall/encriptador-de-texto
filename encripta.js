@@ -20,7 +20,7 @@ function encriptador(textoEncriptado){
     //siclo que recorre mi array que solo cuenta la columna de la matriz
     for (let i = 0; i < matrizEncriptador.length; i++){
         //evalua el texto que lee enviado en la funsión botonEncriptado pasando cada letra en la posicion 0 del array
-        if(textoEncriptado.includes(matrizEncriptador[i],[0])){
+        if(textoEncriptado.includes(matrizEncriptador[i][0])){
            //el atributo .includes lee el caracter mientras que el .replaceAll lo cambia la letra por la cadena de caracteres
             textoEncriptado = textoEncriptado.replaceAll(
                 matrizEncriptador[i][0],
@@ -40,14 +40,12 @@ function btnDesncriptado (){
     
 }
 
-function desencriptadorencriptador(textoDesncriptado){
+function desencriptador(textoDesncriptado){
     textoDesncriptado = textoDesncriptado.toLowerCase();
-    //siclo que recorre mi array que solo cuenta la columna de la matriz
     for (let i = 0; i < matrizEncriptador.length; i++){
-        //evalua el texto que lee enviado en la funsión botonEncriptado pasando cada letra en la posicion 0 del array
-        if(textoDesncriptado.includes(matrizEncriptador[i],[1])){
-           //el atributo .includes lee el caracter mientras que el .replaceAll lo cambia la letra por la cadena de caracteres
-           textoDesncriptado = textoDesncriptado.replaceAll(
+        
+        if(textoDesncriptado.includes(matrizEncriptador[i][1])){
+                textoDesncriptado = textoDesncriptado.replaceAll(
                 matrizEncriptador[i][1],
                 matrizEncriptador[i][0]
             );
