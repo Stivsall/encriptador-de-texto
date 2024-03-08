@@ -2,21 +2,23 @@ body{
     font-family: "lato", sans-serif;
     background: #3a485f;
 }
-
+main{
+    display: flex;
+    margin: 50px 50px;
+}
 header{
    
-    align-items: center;
-    background: #0055FF;
+    background: url(Imagenes-cripto/textura.png);
     
 }
 .banner{
     width: 100%;
-    
 }
 .principal{
     width: 940px;
     padding: 40px 0;
     margin: 0 auto;
+    
 }
 .candado{
     width: 20%;
@@ -28,62 +30,87 @@ h1{
     display: inline;
     
 }
-.primera-caja{
-    width: 1200px;
-    margin: 0 auto;
-    padding: 40px 15px;
-    
+
+.informacion{
+    font-size: 1em;
+    color: aquamarine;
+
 }
 .campo-texto-resive{
+  
     border: none;
+    font-size: 1.5em;
+    border-radius: 5px;
     padding: 20px 15px;
     background: #151f33;
     color: aquamarine;
+    text-transform: lowercase;
+    margin: 30px auto;
+}
+
+::placeholder {
+    .campo-texto-resive:focus {
+        outline: none;
+    }
 }
 .btn{
-   
+    
     padding: 20px;
 }
-.boton-encripta{
-    width: 20%;
-    padding: 0 30px;
+
+.boton-encripta {
+    
+    padding: 5px 30px;
     font-size: 1.5em;
     color: #6fff6f;
     background-color: #0055FF;
     border: none;
-    border-radius: 3px;
-
+    border-radius: 5px;
+    
 }
 
 .boton-encripta:hover{
-    background: #17aa4f;
+    background: #0644b8;
+    color: orange;
     transform: scale(1.2);
+    transition: 1s;
 }
 
-.boton-traduce{
-    width: 20%;
-    padding: 0 30px;
+.boton-traduce, .boton-copia{
+    
+    padding: 5px 30px;
     font-size: 1.5em;
-    color: #50f5df;
-    background-color: #0055FF;
+    color: #180b53;
+    background-color: #88adf8;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
+    margin-left: 40px ;
 }
-.boton-traduce:hover{
-    background: #17aa4f;
+
+.boton-traduce:hover, .boton-copia:hover{
+    background: #283449;
+    color: orange;
     transform: scale(1.2);
+    transition: 1s;
 }
+
 .campo-texto-encriptado{
-    margin: 0 0 0 900px;
+    margin: 30px 50px 65px;
     border: none;
+    border-radius: 5px;
     padding: 20px 15px;
     background: #151f33;
     color: aquamarine;
+    width: 80%;
+}
+
+.campo-texto-encriptado:focus{
+    outline: none;
 }
 
 footer{
     text-align: center;
-    background: url(Imagenes\ Cripto/textura.png);
+    background: url(Imagenes-cripto/textura.png);
     padding: 40px;
 }
 .copy{

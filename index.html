@@ -13,30 +13,28 @@
 <body>
     <header>
         <div class="principal">
-            <img src="Imagenes Cripto/Candado.png" alt="Candado y números" class="candado">
+            <img src="Imagenes-cripto/Candado.png" alt="Candado y números" class="candado">
             <h1>Encriptador One Alura</h1>
         </div>
-        <img src="Imagenes Cripto/banner.png" alt="banner de rompecabezas" class="banner">
+        <img src="Imagenes-cripto/banner.png" alt="banner de rompecabezas" class="banner">
     </header>
     <main class="main">
-        <section class="primera-caja">
-            
-            <textarea id="texto-resive" class="campo-texto-resive" cols="60" rows="10" pbotlaceholder="llega-texto">
-            </textarea>
-
+        <section>
+            <textarea id="texto-resive" class="campo-texto-resive" placeholder="Escribe aqui el texto" cols="60" rows="10"></textarea>
+                <h2 class="informacion">Solo letras minusculas y sin acentos.</h2>
             <div class="btn">
                 <button class="boton-encripta" onclick="btnEncriptado()" >Encriptar</button>
                 <button class="boton-traduce" onclick="btnDesncriptado()" >Decifrar</button>
             </div>
         </section>
         <section class="texto-encriptado" >
-            <textarea id="mensaje-texto-encriptado" class="campo-texto-encriptado" cols="40" rows="10"></textarea>
+            <textarea id="mensaje-texto-encriptado" class="campo-texto-encriptado" cols="40" rows="15"></textarea>
+            <button class="boton-copia" onclick="botonCopiar()" >Copiar</button>
         </section>
     </main>
     <footer>
         <div class="pie">
-           
-            <p class="copy">&copy Copyrigth Barberia Alura</p>
+            <p class="copy">&copy Copyrigth Encriptador Alura</p>
         </div>
     </footer>
     <script src="encripta.js"></script> 

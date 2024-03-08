@@ -11,8 +11,9 @@ let matrizEncriptador = [
 function btnEncriptado (){
     //envio el texto a encriptar y lo saco en consola
     const texto = encriptador(campoTexto.value);
-    console.log(texto);
     campoEncriptado.value = texto; 
+    textArea.value = "";
+    campoEncriptado.style.backgroundImage = "none";
 }
 
 function encriptador(textoEncriptado){
@@ -35,9 +36,8 @@ function encriptador(textoEncriptado){
 function btnDesncriptado (){
     //envio el texto a encriptar y lo saco en consola
     const textoEnviado = desencriptador(campoTexto.value);
-    console.log(textoEnviado);
     campoEncriptado.value = textoEnviado; 
-    
+    textArea.value = "";
 }
 
 function desencriptador(textoDesncriptado){
@@ -53,3 +53,9 @@ function desencriptador(textoDesncriptado){
     }
     return textoDesncriptado;
 }
+/*
+function botonCopiar(textoCopia){
+    const textoCopia = campoEncriptado.value;
+
+
+}*/ 
